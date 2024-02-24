@@ -70,7 +70,12 @@ int main() {
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         // Exibe a senha gerada e da clean no cmd antigo
+        #ifdef WIN32
         system("cls");
+        #elif defined(__linux__) || defined(__APPLE__)
+        system("clear");
+        #endif
+
         std::cout << "Generated Password: " << GeneratedPassword << '\n';
         std::cout << "\n";
     }
