@@ -8,8 +8,8 @@ int main() {
     std::cout << "Password Generator.\n\n";
 
     // String dos caracteres para serem usados na senha
-    const std::string Letters = "abcdefghijklmnopqrstuvwxyz";
-    const std::string BigLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const std::string lowerCase = "abcdefghijklmnopqrstuvwxyz";
+    const std::string upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const std::string Numbers = "0123456789";
     const std::string Symbols = "!@#$%&*";
 
@@ -19,9 +19,9 @@ int main() {
 
         // Cria o print das opções de entrada
         std::cout << "[1] - Exit \n";
-        std::cout << "[2] - Letters + BigLetters \n";
-        std::cout << "[3] - Letters + BigLetters + Numbers \n";
-        std::cout << "[4] - Letters + BigLetters + Numbers + Symbols \n";
+        std::cout << "[2] - lowerCase + upperCase \n";
+        std::cout << "[3] - lowerCase + upperCase + Numbers \n";
+        std::cout << "[4] - lowerCase + upperCase + Numbers + Symbols \n";
 
         int Options;
         std::cout << "\n";
@@ -37,13 +37,13 @@ int main() {
         // Loop pra criar a senha com base nas opções selecionadas
         switch (Options) {
         case 2:
-            Password = Letters + BigLetters;
+            Password = lowerCase + upperCase;
             break;
         case 3:
-            Password = Letters + BigLetters + Numbers;
+            Password = lowerCase + upperCase + Numbers;
             break;
         case 4:
-            Password = Letters + BigLetters + Numbers + Symbols;
+            Password = lowerCase + upperCase + Numbers + Symbols;
             break;
         default:
             std::cout << "Invalid Option. \n";
