@@ -25,9 +25,9 @@ Make sure you have a C++ compiler installed on your system to compile the code.
 Running the password gen:
 ```bash
 [1] - Exit
-[2] - Letters + BigLetters
-[3] - Letters + BigLetters + Numbers
-[4] - Letters + BigLetters + Numbers + Symbols
+[2] - lowerCase + upperCase
+[3] - lowerCase + upperCase + Numbers
+[4] - lowerCase + upperCase + Numbers + Symbols
 
 Select An Option: 4
 
