@@ -16,7 +16,7 @@ Basically it's an intermediate password generator, made in C++ with the aim of p
 
 Make sure you have a C++ compiler installed on your system to compile the code.
 
-### Run the compiled programa, named by password gen.
+### Run the compiled program, named by password gen.
 
 ---
 
